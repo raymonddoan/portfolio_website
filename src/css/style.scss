@@ -1,6 +1,11 @@
+
 *{
     margin: 0;
     padding: 0;
+}
+
+a{
+    text-decoration: none;
 }
 
 // Body Styling
@@ -16,19 +21,22 @@ body{
 
 // Header Styling
 .navbar{
+    position: absolute;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    z-index: 1;
+    
 }
 
 .menu{
-    height: 20px;
+    width: 50px;
 }
 
-@media screen and (max-device-width: 768px) {
-    .navbar {
-        display: flex;
-        flex-direction: column;
-    }
+.nav-items{
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 // Main Styling
@@ -38,7 +46,7 @@ main{
 
 // Footer Styling for Copyright
 footer{
-    margin-top: 10%;
+    margin-top: 5%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -55,7 +63,7 @@ footer{
 
 // Home Page - Imagine styling
 .content-wrapper{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -119,7 +127,7 @@ footer{
 
 // About Me Page Styling
 .subtitle{
-    padding: 2em;
+    padding: 1.5em;
     font-size: large;
     font-weight: bold;
     text-align: center;
@@ -132,3 +140,21 @@ footer{
     justify-content: center;
 }
 
+// Work Page Styling
+.work-wrapper{
+    padding: 2.5%;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.work-images{
+    display: flex;
+}
+
+
+// imports
+@import 'desktop';

@@ -1,0 +1,47 @@
+// Header Styling
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        margin-top: 2.5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .navbar-nonindex {
+        margin-top: 2.5%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .nav-items{
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+}
+
+
+// Work Page Styling
+@media screen and (min-width: 768px){
+    .work-wrapper{
+        flex-flow: row wrap;
+    }
+
+    p{
+        width: 80%;
+    }
+
+    .work-images2{
+        order: -1;
+    }
+}
