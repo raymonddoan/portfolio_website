@@ -1,5 +1,11 @@
+:root{
+    --primary-color: beige;
+    --overlay-color: rgba(221, 230, 236, 0.85);
+    --menu-speed: 0.75s;
+}
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -17,26 +23,6 @@ body{
     min-height: 100vh;
     background-color: beige;
     font-family: 'Poppins', sans-serif;
-}
-
-// Header Styling
-.navbar{
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    z-index: 1;
-    
-}
-
-.menu{
-    width: 50px;
-}
-
-.nav-items{
-    display: none;
-    flex-direction: row;
-    justify-content: space-evenly;
 }
 
 // Main Styling
@@ -157,4 +143,5 @@ footer{
 
 
 // imports
+@import 'menu';
 @import 'desktop';
