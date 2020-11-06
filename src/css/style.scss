@@ -4,14 +4,18 @@
     padding: 0;
 }
 
+:root{
+    --overlay-color: rgba(255, 255, 255, 0.3);
+}
+
 a{
     text-decoration: none;
 }
 
 // Body Styling
 body{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -22,6 +26,7 @@ body{
 // Header Styling
 .navbar{
     position: absolute;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -34,25 +39,35 @@ body{
 }
 
 .nav-items{
-    display: none;
+    font-weight: bold;
+    display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    list-style-type: none;
 }
 
 // Main Styling
 main{
+    width: 100vw;
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ul{
+    list-style-type: none;
 }
 
 // Footer Styling for Copyright
 footer{
-    margin-top: 5%;
+    margin-top: 5vh;
     position: relative;
     display: flex;
     justify-content: center;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vw;
     background: cadetblue;
 }
 
@@ -63,19 +78,19 @@ footer{
 
 // Home Page - Imagine styling
 .content-wrapper{
-    width: 100%;
+    width: 100vw;
     margin: 0 auto;
     position: relative;
 }
 
 .content-wrapper img{
     display: block;
-    width: 100%;
+    width: 100vw;
 }
 
 .text-wrapper{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
@@ -107,8 +122,11 @@ footer{
 }
 
 .contact-wrapper{
-    width: 80%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+    // height: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -134,27 +152,115 @@ footer{
 }
 
 .photo{
-    padding-top: 2em;
-    display: block;
-    width: 70%;
-    justify-content: center;
+    padding: 2em;
+    width: 60vw;
+    // display: flex;
+    // justify-content: center;
 }
 
 // Work Page Styling
 .work-wrapper{
-    padding: 2.5%;
-    width: 80%;
-    height: 100%;
+    padding: 1%;
+    width: 80vw;
+    // height: 100%;
     margin: 0 auto;
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .work-images{
-    display: flex;
+    margin: 3vw;
+    text-align: center;
 }
 
+.photo2{
+    width: 50px;
+}
+
+// Blog Page Styling
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+}
+
+.news-card{
+    margin: 20px;
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 2px .8rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.news-img {
+    height: 20vh;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.img-responsive{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    z-index: -1;
+    transition: transform 1s;
+}
+
+.news-card:hover .img-responsive{
+    transform: scale(1.5);
+}
+
+.date{
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    
+    i{
+        margin-right: 1rem;
+    }
+}
+
+.news-content{
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+.title{
+    font-size: 2rem;
+    line-height: 1;
+}
+
+.subber{
+    font-size: 100%;
+    text-transform: uppercase;
+    color: pink;
+    margin: 1rem 0 1.5rem 0;
+}
+
+.description{
+    font-size: 100%;
+    position: relative;
+}
+
+.cta{
+    padding: 0 3rem;
+    position: relative;
+}
 
 // imports
 @import 'desktop';

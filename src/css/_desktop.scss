@@ -2,16 +2,16 @@
 
 @media screen and (min-width: 768px) {
     .navbar {
-        margin-top: 2.5%;
-        width: 100%;
+        margin-top: 2.5vw;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
     }
 
     .navbar-nonindex {
-        margin-top: 2.5%;
-        width: 100%;
+        margin-top: 2.5vw;
+        width: 100vw;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -28,20 +28,38 @@
         justify-content: space-around;
         list-style-type: none;
     }
-}
 
 
 // Work Page Styling
-@media screen and (min-width: 768px){
+    .photo{
+        width: 20vw;
+    }
+
     .work-wrapper{
+        flex-direction: row;
         flex-flow: row wrap;
     }
 
-    p{
-        width: 80%;
+    .work-images{
+        width: 50vw;
+        margin: 1vw;
     }
 
     .work-images2{
         order: -1;
+    }
+
+    //Blog Page Styling
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0 1.5rem;
+    }
+
+    .news-card{
+        max-width: 40%;
     }
 }
