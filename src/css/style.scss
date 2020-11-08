@@ -1,5 +1,6 @@
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -16,35 +17,107 @@ a{
 body{
     width: 100vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
     min-height: 100vh;
     background-color: beige;
     font-family: 'Poppins', sans-serif;
 }
 
+
 // Header Styling
-.navbar{
-    position: absolute;
-    width: 100vw;
+// .navbar{
+//     position: absolute;
+//     width: 100vw;
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-around;
+//     z-index: 1;
+// }
+
+.navbar-nonindex {
+    max-width: 100%;
+    width: 100%;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+#checkbox2{
+    display: none;
+}
+
+.toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    color: #595959;
+    background: #dbdbdb;
+    transition: all .1s linear;
+}
+
+.toggle:hover {
+    background: #cecece;
+}
+
+#checkbox2:checked + label .second li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+}
+
+#checkbox2:checked + label .second {
+    height: 200px;
+}
+
+.main-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
-    z-index: 1;
+    align-items: center;
+    height: 0px;
+    transition: height .3s linear;
+
+    li{
+        display: flex;
+        /* magic */
+        align-self: center;
+        width: 100%;
+        opacity: 0;
+        visibility: hidden; 
     
+        a{
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            align-self: center;
+            align-content: center;
+            font-size: 14px;
+            padding: 16px 20px;
+            transition: background .2s linear;
+        }
+    }
 }
+ 
+.second {
+    background: #51535f;
 
-.menu{
-    width: 50px;
-}
+    li{
 
-.nav-items{
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
+        a{
+            color: #fff;
+        }
+
+        a:hover{
+            background: #5d5f6d;
+        }
+    }
 }
+  
 
 // Main Styling
 main{
@@ -78,19 +151,20 @@ footer{
 
 // Home Page - Imagine styling
 .content-wrapper{
-    width: 100vw;
-    margin: 0 auto;
+    height: 80vh;
     position: relative;
-}
+    display: flex;
+    justify-content: center;
 
-.content-wrapper img{
-    display: block;
-    width: 100vw;
+    #indeximg{
+        overflow: hidden;
+        display: flex;
+    }
 }
 
 .text-wrapper{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
@@ -111,32 +185,26 @@ footer{
 }
 
 .name{
-    font-size: 2em;
+    font-size: 5vh;
     font-weight: bold;
 }
 
 .job_title{
-    font-size: 1.25em;
+    font-size: 3vh;
     font-weight: bold;
     margin-top: 0.25em;
 }
+
+// Home Page - Contact Section Styling
 
 .contact-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 80vw;
-    // height: 100%;
     margin: 0 auto;
     position: relative;
-}
-
-// Home Page - Contact Section Styling
-.social{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
 }
 
 .social img{
@@ -145,8 +213,8 @@ footer{
 
 // About Me Page Styling
 .subtitle{
-    padding: 1.5em;
-    font-size: large;
+    font-size: 3.5vh;
+    padding: 1rem;
     font-weight: bold;
     text-align: center;
 }
@@ -154,8 +222,16 @@ footer{
 .photo{
     padding: 2em;
     width: 60vw;
-    // display: flex;
-    // justify-content: center;
+}
+
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
 }
 
 // Work Page Styling
@@ -172,6 +248,7 @@ footer{
 }
 
 .work-images{
+    font-size: 2vw;
     margin: 3vw;
     text-align: center;
 }
@@ -186,13 +263,13 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
 }
 
 .news-card{
     margin: 20px;
-    width: 350px;
-    height: 500px;
+    width: 320px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -200,7 +277,7 @@ footer{
 }
 
 .news-img {
-    height: 20vh;
+    height: 25vh;
     position: relative;
     z-index: 1;
     overflow: hidden;
@@ -236,7 +313,8 @@ footer{
 }
 
 .news-content{
-    padding: 2rem 3rem;
+    font-size: 0.8rem;
+    padding: 1rem 3rem;
     position: relative;
 }
 
@@ -246,7 +324,7 @@ footer{
 }
 
 .subber{
-    font-size: 100%;
+    font-size: 1rem;
     text-transform: uppercase;
     color: pink;
     margin: 1rem 0 1.5rem 0;
@@ -258,7 +336,8 @@ footer{
 }
 
 .cta{
-    padding: 0 3rem;
+    height: 5vh;
+    padding: 0.5rem 3rem;
     position: relative;
 }
 
