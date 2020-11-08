@@ -2,8 +2,10 @@
 
     // Header Styling
     .navbar-nonindex {
+        position: absolute;
         max-width: 100%;
         width: 100%;
+        z-index: 1;
     }
     
     #checkbox2, .toggle{
@@ -11,7 +13,7 @@
     }
     
     .main-nav {
-        height: 50px;
+        height: 10vh;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -32,27 +34,30 @@
                 align-self: center;
                 align-content: center;
                 font-size: 14px;
-                padding: 16px 20px;
+                padding: 2% 20px;
                 transition: none;
             }
         }
     }
      
     .second {
-        background: #51535f;
+        background: none;
+        margin: 1vw;
     
         li{
     
             a{
-                color: #fff;
+                color: rgb(83, 83, 83);
+                font-size: 2vw;
             }
     
             a:hover{
-                background: #5d5f6d;
+                background: rgba(54, 40, 40, 0.4);
+                border-radius: 5px;
+
             }
         }
     }
-
 
     // Index Page Styling
     .content-wrapper{
@@ -66,10 +71,18 @@
         }
     }
 
+    .name{
+        font-size: 50px;
+    }
+
+    .job_title{
+        font-size: 30px;
+    }
+
     // About Me Page Styling
     .about-wrapper{
         display: flex;
-        flex-direction: row-reverse;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         width: 80vw;
@@ -79,6 +92,7 @@
 
     // Work Page Styling
     .photo{
+        margin: 10px;
         width: 20vw;
     }
 
@@ -111,6 +125,10 @@
     }
         
     .subtitle{
-        padding: 2rem;
+        font-size: 40px;
+        position: relative;
+        display: inline-block;
+        margin-top: 6vh;
+        padding-top: 3rem;
     }
 }
