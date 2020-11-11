@@ -1,6 +1,6 @@
 # Raymond Doan's Portfolio Website (Student ID: 	GCAS022037)
 
-**URL:** [Link to URL](https://whywesmurfing.github.io/RaymondDoan_T1A2/)
+**URL:** [Link to URL](https://mystifying-torvalds-c9037e.netlify.app/)
 
 **Link to GitHub repo:** [Link to GitHub](https://github.com/whywesmurfing/RaymondDoan_T1A2/tree/branch1)
 
@@ -15,14 +15,26 @@ There are different features have included in the portfolio website. These inclu
 - list of blog posts with wrapping functionality 
 - overlay hover for index page 
 
-## Sitemap:
-![sitemap.png](sitemap.png)
-
-## Screenshots:
-TBD
-
 ## Target audience:
 Employers looking for web development, inspiration for future web developers' portfolio websites
 
 ## Tech stack (e.g. html, css, deployment platform, etc): 
 Currently uses HTML, CSS (Flexbox) and is deployed on GitHub currently.
+
+## Sitemap:
+![sitemap.png](sitemap.png)
+
+## Screenshots:
+### Home Page
+![homepage-desktop.png](/screenshots/homepage-nooverlay.png)
+![homepage-mobile.png](/screenshots/homepage-mobile-withoverlay.png)
+
+### About Page
+![aboutpage-mobile.png](/screenshots/aboutpage-mobile.png)
+
+### Projects Page
+![projectspage-desktop.png](/screenshots/projectspage-desktop.png)
+![projectspage-mobile.png](/screenshots/projectspage-mobile.png)
+
+### Blogs Page
+![blogspage-desktop.png](/screenshots/blogpage-blogwrap.png)
