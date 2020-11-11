@@ -2,7 +2,7 @@
 
 **URL:** [Link to URL](https://whywesmurfing.github.io/RaymondDoan_T1A2/)
 
-**Link to GitHub repo:** [Link to GitHub](https://github.com/whywesmurfing/RaymondDoan_T1A2)
+**Link to GitHub repo:** [Link to GitHub](https://github.com/whywesmurfing/RaymondDoan_T1A2/tree/branch1)
 
 ## Purpose:
 The purpose of this website is to generate a portfolio website such that future employers will be able to view my projects and work that I have done over the course of my web development careers.
@@ -16,7 +16,7 @@ There are different features have included in the portfolio website. These inclu
 - overlay hover for index page 
 
 ## Sitemap:
-TBD
+![sitemap.png](sitemap.png)
 
 ## Screenshots:
 TBD
