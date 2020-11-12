@@ -6,6 +6,9 @@
 }
 
 :root{
+    --primary-color: beige;
+    --secondary-color: #595959;
+    --third-color: #cecece;
     --overlay-color: rgba(255, 255, 255, 0.3);
 }
 
@@ -15,17 +18,19 @@ a{
 
 // Body Styling
 body{
+    margin: 0;
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
-    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--primary-color);
     font-family: 'Poppins', sans-serif;
 }
 
 // Header Styling
 .navbar-nonindex {
     max-width: 100%;
-    width: 100%;
 }
 
 #checkbox2{
@@ -36,18 +41,15 @@ body{
     clear: both;
     display: block;
     text-align: center;
-    font-size: 14px;
-    line-height: 40px;
     cursor: pointer;
     width: 100%;
-    height: 40px;
-    color: #595959;
-    background: #dbdbdb;
+    color: var(--secondary-color);
+    background: var(--primary-color);
     transition: all .1s linear;
 }
 
 .toggle:hover {
-    background: #cecece;
+    background: var(--third-color);
 }
 
 #checkbox2:checked + label .second li {
@@ -57,7 +59,7 @@ body{
 }
 
 #checkbox2:checked + label .second {
-    height: 200px;
+    height: 275px;
 }
 
 // Actual navigation bar styling
@@ -67,15 +69,14 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 0px;
     transition: height .3s linear;
 
     li{
         display: flex;
-        /* magic */
         align-self: center;
         width: 100%;
         opacity: 0;
+        height: 0;
         visibility: hidden; 
     
         a{
@@ -86,23 +87,22 @@ body{
             text-decoration: none;
             align-self: center;
             align-content: center;
-            padding: 16px 20px;
             transition: background .2s linear;
         }
     }
 }
  
 .second {
-    background: #51535f;
+    background: var(--secondary-color);
 
     li{
 
         a{
-            color: #fff;
+            color: var(--third-color);
         }
 
         a:hover{
-            background: #5d5f6d;
+            background: var(--overlay-color);
         }
     }
 }
@@ -114,6 +114,7 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 ul{
@@ -223,6 +224,11 @@ footer{
     margin: 0 auto;
     position: relative;
     font-weight: bold;
+
+    .info {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
 }
 
 // Work Page Styling
@@ -236,12 +242,14 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    
+    .work-images{
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 3vw;
+        text-align: center;
+    }
 
-.work-images{
-    font-size: 1rem;
-    margin: 3vw;
-    text-align: center;
 }
 
 .photo2{
@@ -331,6 +339,89 @@ footer{
     padding: 0.5rem 3rem;
     position: relative;
 }
+
+//Blog Posts
+.blog-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 1px 2px 10px;
+    max-width: 80vw;
+
+    .blog-header {
+        position: relative;
+        margin: 1.5rem;
+        
+        .blog-title {
+            font-size: 1.8rem;
+        }
+
+        .blog-date, .blog-author {
+            font-size: 0.7rem;
+        }
+    }
+
+    .blog-photo{
+        width: 300px;
+    }
+
+    
+    .blog-content{
+        font-size: 0.8rem;
+        padding: 1rem 3rem;
+        position: relative;
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+}
+
+// Contact Page Styling
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+  
+/* Style the container/contact section */
+.contact-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.2rem;
+    border-radius: 5px;
+}
+  
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+}
+  
 
 // import for the desktop @media settings
 @import 'desktop';

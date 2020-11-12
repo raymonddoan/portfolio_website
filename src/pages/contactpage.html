@@ -28,13 +28,26 @@
     </header>
 
     <main>
-        <div class="subtitle">About Me</div>
-        <div class="about-wrapper">
-            <p class="info">
-                Hi I'm Raymond Doan, an aspiring software developer residing in Sydney, Australia. I am currently a part-time student in Coder Academy Australia - Sydney Campus. My current skillset includes minor proficiency in HTML, CSS, SQL and Python. I have aspirations to bring an user-friendly experience into the blockchain space.
-            </p>
-            <img class="photo" src="../img/facephoto.jpg" alt="facephoto.jpg">
-        </div>
+        <div class="subtitle">Get in touch with me!</div>
+        <div class="contact-container">           
+              <div class="column">
+                <form action="#">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <label for="country">Country</label>
+                  <select id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                  <label for="subject">Subject</label>
+                  <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+          </div>
     </main>
 
     <footer>

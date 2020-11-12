@@ -22,19 +22,21 @@ Employers looking for web development, inspiration for future web developers' po
 Currently uses HTML, CSS (Flexbox) and is deployed on GitHub currently.
 
 ## Sitemap:
-![sitemap.png](sitemap.png)
+![sitemap.png](/docs/sitemap.png)
 
 ## Screenshots:
 ### Home Page
-![homepage-desktop.png](/screenshots/homepage-nooverlay.png)
-![homepage-mobile.png](/screenshots/homepage-mobile-withoverlay.png)
+![homepage-desktop.png](/docs/homepage-nooverlay.png)
+![homepage-mobile.png](/docs/homepage-mobile-withoverlay.png)
 
 ### About Page
-![aboutpage-mobile.png](/screenshots/aboutpage-mobile.png)
+![aboutpage-mobile.png](/docs/aboutpage-mobile.png)
 
 ### Projects Page
-![projectspage-desktop.png](/screenshots/projectspage-desktop.png)
-![projectspage-mobile.png](/screenshots/projectspage-mobile.png)
+![projectspage-desktop.png](/docs/projectspage-desktop.png)
+![projectspage-mobile.png](/docs/projectspage-mobile.png)
 
 ### Blogs Page
-![blogspage-desktop.png](/screenshots/blogpage-blogwrap.png)
+![blogspage-desktop.png](/docs/blogpage-blogwrap.png)
+
+## Wireframes:
