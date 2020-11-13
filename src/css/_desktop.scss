@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1000px) {
 
     // Header Styling
     .navbar-nonindex {
@@ -13,8 +13,7 @@
         
     }
     
-
-    
+ 
     .main-nav {
         height: 10vh;
         position: relative;
@@ -80,6 +79,17 @@
         font-size: 30px;
     }
 
+    .contact-wrapper{
+
+        .social{
+    
+            img{
+                width: 70px;
+            }
+        }
+    
+    }
+
     // About Me Page Styling
     .about-wrapper{
         display: flex;
@@ -132,20 +142,7 @@
         margin-top: 6vh;
         padding-top: 3rem;
     }
-
-    .column{
-        float: inline-start;
-        display: flex;
-        justify-content: center;      
-        width: 50%;
-        margin-top: 6px;
-    } 
-    
-    input[type=submit] {
-      width: 50%;
-      margin-top: 6px;
-    }
-    
+  
     // Blog Postings
     .blog-wrapper{
         display: flex;
@@ -160,9 +157,9 @@
 
         .blog-headerwrap {
             margin: 1rem;
-            width: 60%;
+            width: 80%;
             display: flex;
-            justify-content: space-evenly;
+            justify-content: space-between;
         }
     
         .blog-header {
@@ -195,4 +192,21 @@
         }
     }
 
+    // Contact Me Page
+    .contact-wrap{
+
+        .contact-form{
+            display: flex;
+            justify-content: center;
+            width: 50%;
+            margin-top: 6px;
+    
+            input[type=submit] {
+                width: 50%;
+                margin-top: 6px;
+            }
+        } 
+    }
+
+    
 }

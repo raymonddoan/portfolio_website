@@ -10,6 +10,7 @@
     --secondary-color: #595959;
     --third-color: #cecece;
     --overlay-color: rgba(255, 255, 255, 0.3);
+    --font-family: 'Poppins', sans-serif;
 }
 
 a{
@@ -18,14 +19,13 @@ a{
 
 // Body Styling
 body{
-    margin: 0;
     width: 100vw;
     height: 100vh;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     background-color: var(--primary-color);
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-family);
 }
 
 // Header Styling
@@ -194,12 +194,17 @@ footer{
     justify-content: center;
     align-items: center;
     width: 80vw;
-    margin: 0 auto;
-    position: relative;
-}
 
-.social img{
-    width: 20px;
+    .social{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        img{
+            width: 30px;
+        }
+    }
+
 }
 
 // About Me Page Styling
@@ -235,7 +240,6 @@ footer{
 .work-wrapper{
     padding: 1%;
     width: 80vw;
-    // height: 100%;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -350,24 +354,26 @@ footer{
     box-shadow: 1px 2px 10px;
     max-width: 80vw;
 
-    .blog-header {
-        position: relative;
-        margin: 1.5rem;
-        
-        .blog-title {
-            font-size: 1.8rem;
-        }
+    .blog-headerwrap {
 
-        .blog-date, .blog-author {
-            font-size: 0.7rem;
-        }
-    }
-
-    .blog-photo{
-        width: 300px;
-    }
-
+        .blog-header {
+            position: relative;
+            margin: 1.5rem;
+            
+            .blog-title {
+                font-size: 1.8rem;
+            }
     
+            .blog-date, .blog-author {
+                font-size: 0.7rem;
+            }
+        }
+    
+        .blog-photo{
+            width: 300px;
+        }
+    } 
+
     .blog-content{
         font-size: 0.8rem;
         padding: 1rem 3rem;
@@ -380,31 +386,7 @@ footer{
 }
 
 // Contact Page Styling
-/* Style inputs */
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-  
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    width: 100%;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
-  
-input[type=submit]:hover {
-    background-color: #45a049;
-}
-  
-/* Style the container/contact section */
-.contact-container {
+.contact-wrap {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -414,14 +396,38 @@ input[type=submit]:hover {
     border-radius: 5px;
 }
   
-/* Create two columns that float next to eachother */
-.column {
-    float: left;
-    width: 100%;
-    margin-top: 0;
+.contact-form {
+    width: 100vw;
     padding: 20px;
+
+    input[type=text], select, textarea {
+        width: 100%;
+        padding: 1%;
+        border: 2px solid rgba(255, 255, 255, .7);
+        border-bottom: 2px solid black;
+        background: none;
+        margin-top: 1vh;
+        margin-bottom: 12px;
+        resize: vertical;
+    }
+      
+    input[type=submit] {
+        background-color: var(--secondary-color);
+        color: var(--third-color);
+        width: 100%;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+    }
+      
+    input[type=submit]:hover {
+        background-color: #2e3a2e;
+    }
+
+    .subject{
+        font-family: var(--font-family);
+    }
 }
   
-
 // import for the desktop @media settings
 @import 'desktop';

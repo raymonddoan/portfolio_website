@@ -10,6 +10,7 @@
   --secondary-color: #595959;
   --third-color: #cecece;
   --overlay-color: rgba(255, 255, 255, 0.3);
+  --font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -17,7 +18,6 @@ a {
 }
 
 body {
-  margin: 0;
   width: 100vw;
   height: 100vh;
   min-height: 100vh;
@@ -29,7 +29,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: var(--primary-color);
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-family);
 }
 
 .navbar-nonindex {
@@ -247,12 +247,20 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 80vw;
-  margin: 0 auto;
-  position: relative;
 }
 
-.social img {
-  width: 20px;
+.contact-wrapper .social {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-wrapper .social img {
+  width: 30px;
 }
 
 .subtitle {
@@ -445,20 +453,20 @@ footer {
   max-width: 80vw;
 }
 
-.blog-wrapper .blog-header {
+.blog-wrapper .blog-headerwrap .blog-header {
   position: relative;
   margin: 1.5rem;
 }
 
-.blog-wrapper .blog-header .blog-title {
+.blog-wrapper .blog-headerwrap .blog-header .blog-title {
   font-size: 1.8rem;
 }
 
-.blog-wrapper .blog-header .blog-date, .blog-wrapper .blog-header .blog-author {
+.blog-wrapper .blog-headerwrap .blog-header .blog-date, .blog-wrapper .blog-headerwrap .blog-header .blog-author {
   font-size: 0.7rem;
 }
 
-.blog-wrapper .blog-photo {
+.blog-wrapper .blog-headerwrap .blog-photo {
   width: 300px;
 }
 
@@ -472,31 +480,7 @@ footer {
   font-size: 0.8rem;
 }
 
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  width: 100%;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.contact-container {
+.contact-wrap {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -515,15 +499,40 @@ input[type=submit]:hover {
   border-radius: 5px;
 }
 
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 100%;
-  margin-top: 0;
+.contact-form {
+  width: 100vw;
   padding: 20px;
 }
 
-@media screen and (min-width: 768px) {
+.contact-form input[type=text], .contact-form select, .contact-form textarea {
+  width: 100%;
+  padding: 1%;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-bottom: 2px solid black;
+  background: none;
+  margin-top: 1vh;
+  margin-bottom: 12px;
+  resize: vertical;
+}
+
+.contact-form input[type=submit] {
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-form input[type=submit]:hover {
+  background-color: #2e3a2e;
+}
+
+.contact-form .subject {
+  font-family: var(--font-family);
+}
+
+@media screen and (min-width: 1000px) {
   .navbar-nonindex {
     position: absolute;
     max-width: 100%;
@@ -602,6 +611,9 @@ input[type=submit]:hover {
   .job_title {
     font-size: 30px;
   }
+  .contact-wrapper .social img {
+    width: 70px;
+  }
   .about-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -669,21 +681,6 @@ input[type=submit]:hover {
     margin-top: 6vh;
     padding-top: 3rem;
   }
-  .column {
-    float: inline-start;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    width: 50%;
-    margin-top: 6px;
-  }
-  input[type=submit] {
-    width: 50%;
-    margin-top: 6px;
-  }
   .blog-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -706,13 +703,13 @@ input[type=submit]:hover {
   }
   .blog-wrapper .blog-headerwrap {
     margin: 1rem;
-    width: 60%;
+    width: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .blog-wrapper .blog-header {
     position: relative;
@@ -735,6 +732,20 @@ input[type=submit]:hover {
   }
   .blog-wrapper .blog-content p {
     font-size: 0.8rem;
+  }
+  .contact-wrap .contact-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 50%;
+    margin-top: 6px;
+  }
+  .contact-wrap .contact-form input[type=submit] {
+    width: 50%;
+    margin-top: 6px;
   }
 }
 /*# sourceMappingURL=style.css.map */
