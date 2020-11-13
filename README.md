@@ -1,6 +1,6 @@
 # Raymond Doan's Portfolio Website (Student ID: 	GCAS022037)
 
-**URL:** [Link to URL](https://mystifying-torvalds-c9037e.netlify.app/)
+**URL:** [Link to URL](https://lucid-pike-94e3c0.netlify.app/)
 
 **Link to GitHub repo:** [Link to GitHub](https://github.com/whywesmurfing/RaymondDoan_T1A2/tree/branch1)
 
