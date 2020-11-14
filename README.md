@@ -4,22 +4,25 @@
 
 **Link to GitHub repo:** [Link to GitHub](https://github.com/whywesmurfing/RaymondDoan_T1A2/)
 
+# Table of contents
+1. [Purpose](#purpose)
+2. [Functionality / Features](#functionfeatures)
+3. [Target](#target)
 
-
-[TOC]
-
-### Purpose:
+### Purpose: <a name="purpose"></a>
 The purpose of this website is to generate a portfolio website such that future employers will be able to view my projects and work that I have done over the course of my web development careers.
 
-### Functionality / Features:
+### Functionality / Features: <a name="functionfeatures"></a>
 There are different features have included in the portfolio website. These include:
 
 - a navigation bar that is converted into a hamburger menu when shrunk to mobile form
+
+
 - alternating lists of components (ie. in the Projects page)
 - list of blog posts with wrapping functionality 
 - overlay hover for index page 
 
-### Target audience:
+### Target audience: <a name="target"></a>
 Employers looking for web development, inspiration for future web developers' portfolio websites
 
 ### Tech stack (e.g. html, css, deployment platform, etc): 
@@ -34,25 +37,20 @@ Employers looking for web development, inspiration for future web developers' po
 #### Home Page
 ![homepage-desktop.png](/docs/homepage-withoverlay.png) ![homepage-mobile.png](/docs/homepage-mobile-withoverlay.png)
 
-<img src="C:\projects\RaymondDoan_T1A2\docs\homepage-withoverlay.png" alt="homepage-withoverlay" style="zoom:33%;" />
-
-<img src="C:\projects\RaymondDoan_T1A2\docs\homepage-mobile-withoverlay.png" alt="homepage-mobile-withoverlay" style="zoom: 67%;" />
-
 #### About Page
 ![aboutpage-mobile.png](/docs/aboutpage-mobile.png)
-
-<img src="C:\projects\RaymondDoan_T1A2\docs\aboutpage-mobile.png" alt="aboutpage-mobile" style="zoom: 80%;" />
 
 #### Projects Page
 ![projectspage-desktop.png](/docs/projectspage-desktop.png) ![projectspage-mobile.png](/docs/projectspage-mobile.png)
 
-<img src="C:\projects\RaymondDoan_T1A2\docs\projectspage-desktop.png" alt="projectspage-desktop" style="zoom:67%;" />
-
-<img src="C:\projects\RaymondDoan_T1A2\docs\projectspage-mobile.png" alt="projectspage-mobile" style="zoom: 80%;" />
-
 #### Blogs Page
 ![blogspage-desktop.png](/docs/blogpage-blogwrap.png)
 
-<img src="C:\projects\RaymondDoan_T1A2\docs\blogpage-blogwrap.png" alt="blogpage-blogwrap" style="zoom: 33%;" />
-
 ### Wireframes:
+![wireframe-home.png](/docs/wireframe-home.png)
+![wireframe-about.png](/docs/wireframe-about.png)
+![wireframe-work1.png](/docs/wireframe-work1.png)
+![wireframe-work2.png](/docs/wireframe-work2.png)
+![wireframe-blog1.png](/docs/wireframe-blog1.png)
+![wireframe-blog2.png](/docs/wireframe-blog2.png)
+![wireframe-contact.png](/docs/wireframe-contact.png)
